@@ -20,6 +20,11 @@ export default class Matrix extends Component {
   }
   
 }
+const colorTransform = () => {
+  const array = ['#F00','#F00', '#F00','#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
+  return new Array(10).fill(array)
+}
+
 Matrix.defaultProps = {
-values: 
-  };
+  values: colorTransform()
+}
